@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plaza Comercial Tizimin | Visita nuestros Locales</title>
+    <!-- Aquí enlazaremos luego el CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. ENCABEZADO E INICIO (HERO) -->
+    <header id="inicio">
+        <div class="contenido-hero">
+            <h1>Plaza Comercial Tizimin </h1>
+            <p class="eslogan">El lugar perfecto para atender tu salud. ¡Farmacia, Óptica y Oficinas!</p>
+            <a href="#locales" class="boton">Será un gusto atenderte!</a>
+        </div>
+    </header>
+
+    <!-- 2. SECCIÓN DE LOCALES DISPONIBLES -->
+    <section id="locales">
+        <h2>Contamos con una Mágnifica Terraza para eventos.</h2>
+        <p class="subtitulo-seccion">Diseñada para el éxito de tu evento.</p>
+
+        <div class="contenedor-tarjetas">
+            <!-- Tarjeta Farmacia -->
+            <div class="tarjeta">
+                <div class="icono">💊</div> <!-- Puedes reemplazar esto por una imagen después -->
+                <h3> Farmacia </h3>
+                <p>Extenso surtido en medicamentos genéricos y de patente.</p>
+                <ul>
+                    <li>✅ x</li>
+                    <li>✅ x</li>
+                    <li>✅ x</li>
+                </ul>
+                <a href="#contacto" class="boton-tarjeta">Contactar </a>
+            </div>
+
+            <!-- Tarjeta Óptica -->
+            <div class="tarjeta">
+                <div class="icono">👓</div>
+                <h3>Óptica</h3>
+                <p>Con más de 10 años atendiendo a la comunidad.</p>
+                 <ul>
+                    <li>✅ x</li>
+                    <li>✅ x</li>
+                    <li>✅ x</li>
+                </ul>
+                <a href="#contacto" class="boton-tarjeta">Contactar </a>
+            </div>
+
+            <!-- Tarjeta Oficina -->
+            <div class="tarjeta">
+                <div class="icono">💼</div>
+                <h3>Oficinas Ejecutivas</h3>
+                <p>Ambientes corporativos listos para tu equipo. Múltiples configuraciones disponibles.</p>
+                 <ul>
+                    <li>✅ Desde x m²</li>
+                    <li>✅ x</li>
+                    <li>✅ Estacionamiento para clientes</li>
+                </ul>
+                <a href="#contacto" class="boton-tarjeta">Contactar </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SECCIÓN DE VENTAJAS -->
+    <section id="ventajas">
+        <h2>¿Por qué elegir Plaza Comercial Tizimin?</h2>
+        <div class="contenedor-ventajas">
+            <div class="ventaja">
+                <span>📍</span>
+                <h3>Ubicación Estratégica</h3>
+                <p>A solo pasos de Av. Tizimin y Av.Chicoasén.</p>
+            </div>
+            <div class="ventaja">
+                <span>🛡️</span>
+                <h3>Seguridad </h3>
+                <p>Circuito de cámaras para tu tranquilidad.</p>
+            </div>
+            <div class="ventaja">
+                <span>🚗</span>
+                <h3>Estacionamiento</h3>
+                <p> A.</p>Abierto de lunes a domingo
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SECCIÓN DE CONTACTO -->
+    <section id="contacto">
+        <h2>Te interesa agendar un evento en nuestra Terraza?. Contactanos!</h2>
+        <p>Mándanos un mensaje y nuestro equipo te dará toda la información.</p>
+        
+        <!-- Aquí luego podemos hacer que el formulario funcione con JavaScript o un servicio externo -->
+        <form id="formulario-contacto">
+            <input type="text" placeholder="Tu Nombre Completo" required>
+            <input type="email" placeholder="Tu Correo Electrónico" required>
+            <input type="tel" placeholder="Tu Teléfono">
+            <select required>
+                <option value="" disabled selected>¿Qué local te interesa?</option>
+                <option value="farmacia">Farmacia</option>
+                <option value="optica">Óptica</option>
+                <option value="oficinas">Oficinas</option>
+            </select>
+            <textarea placeholder="Cuéntanos más sobre tu proyecto..." rows="4"></textarea>
+            <button type="submit" class="boton">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>© 2024 Plaza Comercial Arcoíris. Todos los derechos reservados. | 📞 Tel: (123) 456-7890 | 📧 info@plaza-arcoiris.com</p>
+    </footer>
+
+    <!-- Aquí enlazaremos el JavaScript más tarde -->
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>

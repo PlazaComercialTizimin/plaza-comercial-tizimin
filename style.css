@@ -1,0 +1,294 @@
+/* ==========================================
+   1. RESET Y ESTILOS GENERALES
+   ========================================== */
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* ==========================================
+   2. ENCABEZADO HERO
+   ========================================== */
+header#inicio {
+    background: linear-gradient(135deg, #1a3a5c, #2c5f8a);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.eslogan {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ==========================================
+   3. BOTONES
+   ========================================== */
+.boton {
+    display: inline-block;
+    background-color: #e67e22;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #d35400;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.boton-tarjeta {
+    display: inline-block;
+    background-color: #1a3a5c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+
+.boton-tarjeta:hover {
+    background-color: #e67e22;
+    transform: translateY(-2px);
+}
+
+/* ==========================================
+   4. SECCIONES GENERALES
+   ========================================== */
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #1a3a5c;
+    margin-bottom: 10px;
+}
+
+.subtitulo-seccion {
+    text-align: center;
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+/* ==========================================
+   5. TARJETAS DE LOCALES
+   ========================================== */
+.contenedor-tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    text-align: center;
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+.icono {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.tarjeta h3 {
+    color: #1a3a5c;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.tarjeta p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.tarjeta ul {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.tarjeta ul li {
+    padding: 5px 0;
+    color: #555;
+}
+
+/* ==========================================
+   6. SECCIÓN DE VENTAJAS
+   ========================================== */
+#ventajas {
+    background-color: #f0f4f8;
+    margin-top: 40px;
+    padding: 60px 20px;
+}
+
+.contenedor-ventajas {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ventaja {
+    text-align: center;
+    padding: 30px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+.ventaja span {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.ventaja h3 {
+    color: #1a3a5c;
+    margin-bottom: 10px;
+}
+
+.ventaja p {
+    color: #666;
+}
+
+/* ==========================================
+   7. FORMULARIO DE CONTACTO
+   ========================================== */
+#contacto {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 30px auto 0;
+    gap: 15px;
+}
+
+#formulario-contacto input,
+#formulario-contacto select,
+#formulario-contacto textarea {
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+}
+
+#formulario-contacto input:focus,
+#formulario-contacto select:focus,
+#formulario-contacto textarea:focus {
+    outline: none;
+    border-color: #1a3a5c;
+}
+
+#formulario-contacto textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#formulario-contacto button {
+    align-self: center;
+    margin-top: 10px;
+}
+
+/* ==========================================
+   8. PIE DE PÁGINA
+   ========================================== */
+footer {
+    background-color: #1a3a5c;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 0.9rem;
+}
+
+/* ==========================================
+   9. RESPONSIVE DESIGN
+   ========================================== */
+@media (max-width: 768px) {
+    header#inicio {
+        padding: 60px 20px;
+        min-height: 50vh;
+    }
+    
+    .contenido-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .eslogan {
+        font-size: 1.1rem;
+    }
+    
+    section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .contenedor-tarjetas,
+    .contenedor-ventajas {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .tarjeta,
+    .ventaja {
+        max-width: 100%;
+    }
+}
